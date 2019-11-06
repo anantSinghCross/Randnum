@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.Random;
 
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 Random rand = new Random();
                 int num = rand.nextInt(10);
                 t1.setText(String.valueOf(num));
+                new MaterialAlertDialogBuilder(MainActivity.this).setMessage(String.valueOf(num))
+                        .show();
             }
         });
     }
