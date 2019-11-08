@@ -42,6 +42,7 @@
         android:layout_below="@+id/numCard"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/colorAccent"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,16 +50,20 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/minVal"
             android:layout_width="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
+            android:inputType="numberSigned"
             android:fontFamily="@font/productsans"
             android:hint="  From"/>
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/maxVal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:inputType="numberSigned"
             android:layout_margin="10dp"
             android:fontFamily="@font/productsans"
             android:hint="  To"/>
