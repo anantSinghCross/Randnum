@@ -30,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 Random rand = new Random();
                 int num = rand.nextInt(10);
                 t1.setText(String.valueOf(num));
-                new MaterialAlertDialogBuilder(MainActivity.this).setMessage(String.valueOf(num))
-                        .show();
+//                new MaterialAlertDialogBuilder(MainActivity.this).setMessage(String.valueOf(num))
+//                        .setPositiveButton("OK",null)
+//                        .show();
             }
         });
     }
