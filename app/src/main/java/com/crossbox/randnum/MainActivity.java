@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(min.getText().toString().equals("") || max.getText().toString().equals("")){
-                    Toast.makeText(MainActivity.this, "You need to enter a valid number", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "You need to enter both values", Toast.LENGTH_SHORT).show();
                 }
                 else if(Integer.parseInt(min.getText().toString()) > Integer.parseInt(max.getText().toString())){
                     Toast.makeText(MainActivity.this, "Enter correct values please", Toast.LENGTH_SHORT).show();
